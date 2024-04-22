@@ -1,0 +1,20 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.0.5",
+  "scripts": {
+    "dev": "pnpm lint",
+    "dev:a": "pnpm --filter nuxt-a dev",
+    "dev:b": "pnpm --filter nuxt-b dev",
+    "lint": "turbo run lint",
+    "lint:a": "turbo run lint --filter nuxt-a",
+    "lint:b": "turbo run lint --filter nuxt-b"
+  },
+  "devDependencies": {
+    "@master/eslint-config-css": "2.0.0-rc.28",
+    "eslint": "^9.1.1",
+    "vue-eslint-parser": "^9.4.2",
+    "turbo": "^1.13.2"
+  }
+}
