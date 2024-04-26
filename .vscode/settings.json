@@ -19,10 +19,23 @@
     "source.fixAll.markdownlint": "explicit"
   },
 
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "html", "json", "jsonc", "yaml", "toml"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ],
 
   // Enable the ESlint flat config support
-  // "eslint.experimental.useFlatConfig": true,
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.workingDirectories": [{ "pattern": "apps/*" }],
+
   // "eslint.rules.customizations": [
   //   { "rule": "style/*", "severity": "off" },
   //   { "rule": "format/*", "severity": "off" },
@@ -37,7 +50,15 @@
   // ],
 
   "stylelint.enable": true,
-  "stylelint.validate": ["css", "less", "postcss", "sass", "scss", "vue", "html"],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "sass",
+    "scss",
+    "vue",
+    "html"
+  ],
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,

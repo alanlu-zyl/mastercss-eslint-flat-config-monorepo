@@ -1,9 +1,10 @@
 {
   "name": "monorepo",
-  "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.0.5",
+  "private": true,
+  "packageManager": "pnpm@9.0.6",
   "scripts": {
+    "modules:clean": "npx rimraf --glob ./**/node_modules ./pnpm-lock.yaml",
     "dev": "pnpm lint",
     "dev:a": "pnpm --filter nuxt-a dev",
     "dev:b": "pnpm --filter nuxt-b dev",
@@ -12,9 +13,9 @@
     "lint:b": "turbo run lint --filter nuxt-b"
   },
   "devDependencies": {
-    "@master/eslint-config-css": "2.0.0-rc.28",
-    "eslint": "^9.1.1",
-    "vue-eslint-parser": "^9.4.2",
-    "turbo": "^1.13.2"
+    "@master/eslint-config-css": "^2.0.0-rc.33",
+    "eslint": "^8.57.0",
+    "turbo": "^1.13.3",
+    "vue-eslint-parser": "^9.4.2"
   }
 }

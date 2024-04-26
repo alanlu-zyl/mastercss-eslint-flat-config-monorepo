@@ -1,5 +1,5 @@
 export default {
   variables: {
-    alpha: '#00F',
+    alpha: "#00F",
   },
 };

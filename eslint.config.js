@@ -1,5 +1,5 @@
-import css from '@master/eslint-config-css/flat';
-import { FlatCompat } from '@eslint/eslintrc';
+import css from "@master/eslint-config-css/flat";
+import { FlatCompat } from "@eslint/eslintrc";
 
 const compat = new FlatCompat();
 
@@ -9,8 +9,8 @@ export default [
   ...compat.config({
     overrides: [
       {
-        files: ['*.vue'],
-        parser: 'vue-eslint-parser',
+        files: ["*.vue"],
+        parser: "vue-eslint-parser",
       },
     ],
   }),
