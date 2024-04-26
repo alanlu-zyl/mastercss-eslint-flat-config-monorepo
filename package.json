@@ -9,13 +9,16 @@
     "dev:a": "pnpm --filter nuxt-a dev",
     "dev:b": "pnpm --filter nuxt-b dev",
     "lint": "turbo run lint",
-    "lint:a": "turbo run lint --filter nuxt-a",
-    "lint:b": "turbo run lint --filter nuxt-b"
+    "lint:a": "pnpm lint --filter nuxt-a",
+    "lint:b": "pnpm lint --filter nuxt-b",
+    "typecheck": "turbo run typecheck",
+    "typecheck:a": "pnpm typecheck --filter nuxt-a",
+    "typecheck:b": "pnpm typecheck --filter nuxt-b"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.16.0",
     "@master/eslint-config-css": "^2.0.0-rc.33",
     "eslint": "^8.57.0",
-    "turbo": "^1.13.3",
-    "vue-eslint-parser": "^9.4.2"
+    "turbo": "^1.13.3"
   }
 }

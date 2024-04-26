@@ -1,17 +1,4 @@
-import css from "@master/eslint-config-css/flat";
-import { FlatCompat } from "@eslint/eslintrc";
+import antfu from '@antfu/eslint-config'
+import css from '@master/eslint-config-css/flat'
 
-const compat = new FlatCompat();
-
-export default [
-  css,
-  // Legacy config
-  ...compat.config({
-    overrides: [
-      {
-        files: ["*.vue"],
-        parser: "vue-eslint-parser",
-      },
-    ],
-  }),
-];
+export default antfu().append(css)

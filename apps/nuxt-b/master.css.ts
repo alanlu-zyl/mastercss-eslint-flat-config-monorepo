@@ -1,5 +1,5 @@
 export default {
   variables: {
-    beta: "#F00",
+    beta: '#F00',
   },
-};
+}

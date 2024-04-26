@@ -1,17 +1,24 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from "vue";
+import { defineAsyncComponent } from 'vue'
+
+const conut = ref<number>(2)
+conut.value++
 
 const CSSRuntimeProvider = defineAsyncComponent(
-  async () => (await import("@master/css.vue")).CSSRuntimeProvider
-);
+  async () => (await import('@master/css.vue')).CSSRuntimeProvider,
+)
 </script>
 
 <template>
   <CSSRuntimeProvider :config="import('./master.css')">
     <h1>nuxt-A</h1>
     <main>
-      <div class="fg:alpha">success</div>
-      <div class="fg:beta">error</div>
+      <div class="fg:alpha">
+        success
+      </div>
+      <div class="fg:beta">
+        error
+      </div>
     </main>
   </CSSRuntimeProvider>
 </template>
